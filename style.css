@@ -1,0 +1,39 @@
+h1{
+    margin-left: 70px;
+}
+form{
+    list-style: none;
+    margin-bottom: 5px;
+}
+form ul label{
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: left;
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+form ul input, select, span{
+margin-bottom: 10px;
+}
+form textarea{
+    float: left;
+    width: 360px;
+    height: 150px;
+}
+[type="submit"]{
+    float: left;
+    text-align: center;
+    clear:left;
+    margin: 20 0 0 230px;
+    font-size: 20px;
+}
+p{
+    margin-left: 70px;
+    font-weight: bold;
+}
+background{
+     background-color: orangered;
+     
+}
