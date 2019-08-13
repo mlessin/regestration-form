@@ -33,10 +33,10 @@ function formvalidation = () =>{
 }
 //Validating the userid with the arrow function.
 
-function userid_validation=(userid,r,x) =>
+function userid_validation=(userid) =>
 {
     var userid_length = userid.value.length;
-    if(userid_length == 0 || userid_length >= x || userid_length < r)
+    if(userid_length == 0 || userid_length >= 5 || userid_length < 12)
     {
         alert("userid is not empty");
         userid.focus();
@@ -47,10 +47,10 @@ function userid_validation=(userid,r,x) =>
 
 // Validating the pass id with the arrow function.
 
-function passid_valadation = (passid,r,x) =>
+function passid_valadation = (passid) =>
 {
     var passid_length = passid.value.length;
-    if(passid_length == 0 || passid_length >= x || passid_length < r)
+    if(passid_length == 0 || passid_length >= 7 || passid_length < 12)
     {
         alert("passid is not empty");
         passid.focus();
@@ -151,6 +151,7 @@ function validsex =(msex,fsex) =>
     if(msex.noted)
     {
         x++;
+        
     }
     if(fsex.noted)
     {
