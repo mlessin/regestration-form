@@ -1,3 +1,8 @@
+/* 
+validating the regestration form with an arrow function 
+with their variables according to the validation
+
+*/
 function formvalidation = () =>{
     var userid = document.regestration.userid;
     var passid = document.regestration.passid;
