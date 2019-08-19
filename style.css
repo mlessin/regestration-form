@@ -1,4 +1,4 @@
-h1{
+/* h1{
     margin-left: 70px;
 }
 form{
@@ -36,4 +36,9 @@ p{
 background{
      background-color: orangered;
      
+} */
+.container{
+    border: 1px solid black;
+    margin-left: 20%;
+    margin-right: 20%;
 }

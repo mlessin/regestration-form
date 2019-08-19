@@ -1,24 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>Regestration form.</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
 </head>
+
 <body>
-    <h1> Regestration Form</h1>
-    <form name="Regestration" onsubmit="return formvalidation();">
-        
-            <label for="userid"> user id:</label>
-            <input type="text" name="userid"size="40"/><p>
-            <label for="passid"> password:</label>
-            <input type="password"name="passid"size="40"/><p>
-            <label for="username"> Name:</label>
-            <input type="text"name="username"size="40"/><p>
-            <label for="Address">Address:</label>
-            <input type="text"name="Address"size="40"/><p>
+
+    <div class="container">
+
+        <h1> Regestration Form</h1>
+        <form name="Regestration" id="Regestration">
+
+            <div class="form-group">
+                <label for="userid"> user id:</label>
+                <input type="text" name="userid" id="userid"  />
+            </div>
+
+
+            <div class="form-group">
+                <label for="username"> Name:</label>
+                <input type="text" name="username" id="username" />
+
+            </div>
+
+            <div class="form-group">
+                <label for="Address">Address:</label>
+               
+                <input type="text" name="Address"  />
+            </div>
+
+            <div class="form-group">
                 <label for="country">country:</label>
                 <select name="country" id="country">
                     <option selected="" value="default">(please select a country)</option>
@@ -28,29 +50,49 @@
                     <option value="RA">Rwanda</option>
                     <option value="KY">Kenya</option>
                     <option value="EG">Egypt</option>
-                </select><p>
+                </select>
+            </div>
+
+            <div class="form-group">
                 <label for="zipcode">zipcode:</label>
-                <input type="number"name="zipcode"size="10"/><p>
-                    <label for="Email">Email:</label>
-                    <input type="text"name="Email"size="30"/><p>
-              
-                <div>
-                        sex:
-                        <input type="radio" name="gender" value="male"> Male
-                        <input type="radio" name="gender" value="female"> Female
-                </div><p>
-                    <div>
-                        language:
-                        <input type="checkbox" name="English" value="English">English
-                        <input type="checkbox" name="Non English" value="Non English">Non English
-                    </div><p>
-                        
-                            About:
-                           <textarea name="asc" id="asc"></textarea><p>
+                <input type="text" name="zipcode" id="zipcode" />
+            </div>
 
-                            
-                           <input type="submit" name="submit" value="submit"/>
+            <div class="form-group">
+                <label for="Email">Email:</label>
+                <input type="text" name="Email" id="email"  />
 
+            </div>
+            <div class="form-group">
+                <label>sex:</label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </div>
+
+            <div class="form-group">
+                <label>Language:</label>
+                <input type="checkbox" name="English" value="English">English
+                <input type="checkbox" name="Non English" value="Non English">Non English
+            </div>
+
+
+            <div class="form-group">
+                <div><label for="asc">About</label></div>
+                <textarea name="asc" id="asc"></textarea>
+
+            </div>
+
+            <div class="form-group">
+                <input type="submit" name="submit" value="submit" />
+            </div>
+
+        </form>
+
+
+    </div>
+
+    <script src="function.js"></script>
 
 </body>
+
 </html>
